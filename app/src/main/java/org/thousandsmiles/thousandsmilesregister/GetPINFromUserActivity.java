@@ -33,7 +33,6 @@ import java.text.SimpleDateFormat;
 
 import me.philio.pinentry.PinEntryView;
 
-
 public class GetPINFromUserActivity extends Activity {
 
     private Volunteer m_volunteer;
@@ -47,15 +46,6 @@ public class GetPINFromUserActivity extends Activity {
         }
     };
 
-    /*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_get_pinfrom_user, menu);//Menu Resource, Menu
-        return true;
-    }
-    */
-
     private Runnable disconnectCallback = new Runnable() {
         @Override
         public void run() {
@@ -66,20 +56,6 @@ public class GetPINFromUserActivity extends Activity {
             finish();
         }
     };
-
-    /*
-    private Runnable disconnectCallback = new Runnable() {
-        @Override
-        public void run() {
-            // Perform any required operation on disconnect
-
-            Intent intent = new Intent(m_activity, LetterSelectActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-            finish();
-        }
-    };
-    */
 
     public void resetDisconnectTimer(){
         disconnectHandler.removeCallbacks(disconnectCallback);
@@ -314,7 +290,7 @@ public class GetPINFromUserActivity extends Activity {
         Intent intent = new Intent(m_activity, PrintBadgeActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         BadgeContent x = new BadgeContent();
-        x.setName("Bob Chalfa");
+        x.setName("Joe Doe");
         x.setDate("November, 2015");
         x.setJob("Inventory");
         intent.putExtra("badgeContent", (Parcelable) x);
