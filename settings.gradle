@@ -1,0 +1,2 @@
+include ':app', ':pinentryview-1.0.5', ':volley-kitkat'
+project(':volley-kitkat').projectDir = new File('volley')

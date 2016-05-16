@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--  basics -->
+    <color name="red">#ffff0000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="green">#ff00ff00</color>
+    <color name="magenta">#ffff00ff</color>
+    <color name="cyan">#ff00ffff</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="black">#00000000</color>
+
+    <!--  the ts logo bar color  -->
+    <color name="thousandsmiles">#ff333399</color>
+
+    <!--  shades of gray -->
+    <color name="graySelected">#ff777777</color>
+    <color name="grayUnselected">#ffbbbbbb</color>
+    <color name="lightGray">#ffc8c8c8</color>
+    <color name="white">#ffffffff</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
