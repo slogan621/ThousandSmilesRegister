@@ -32,9 +32,8 @@ The software should run on Android 4.4 or later.
 
 The software layout is somewhat hardcoded for larger screened Android Tablets,
 and is known to work with Google's Nexus 9 and Samsung Galaxy Tab 4 (which we
-us in our clinics). The device is designed for use in Landscape mode. It also
-runs in immersive, full screen mode.
-
+use in our clinics). The layouts are designed for use in Landscape mode. The
+application also runs in immersive, full screen mode.
 
 RESTful APIs Used By This Project
 ---------------------------------
