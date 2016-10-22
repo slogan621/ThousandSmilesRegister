@@ -131,7 +131,7 @@ public class PrinterREST extends RESTful {
     }
 
 
-    public Object printBadge2(BadgeImage bimg) {
+    public Object printBadge2(BadgeImage bimg, String filenamePrefix) {
 
         VolleySingleton volley = VolleySingleton.getInstance();
 
@@ -147,6 +147,7 @@ public class PrinterREST extends RESTful {
         try {
 
             data.put("data", bimg.getBase64());
+            data.put("filename_prefix", filenamePrefix);
 
         } catch(Exception e) {
             // not sure this would ever happen, ignore. Continue on with the request with the expectation it fails

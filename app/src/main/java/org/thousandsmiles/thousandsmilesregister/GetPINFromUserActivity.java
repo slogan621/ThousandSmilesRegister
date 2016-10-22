@@ -233,8 +233,11 @@ public class GetPINFromUserActivity extends Activity {
 
                                 String name = String.format("%s %s", m_volunteer.getFirstName(),
                                                                      m_volunteer.getLastName());
+                                String filename_prefix = String.format("%s_%s", m_volunteer.getLastName(),
+                                                                              m_volunteer.getFirstName());
 
                                 x.setName(name);
+                                x.setFilenamePrefix(filename_prefix);
                                 DateFormat dateFormat = new SimpleDateFormat("MM yyyy");
                                 Date date = new Date();
                                 String datestr = String.format("%s", dateFormat.format(date));

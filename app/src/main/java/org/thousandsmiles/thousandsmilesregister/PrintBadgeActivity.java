@@ -284,7 +284,7 @@ public class PrintBadgeActivity extends ActionBarActivity {
         new Thread(new Runnable() {
             public void run() {
                 final PrinterREST x = new PrinterREST(m_activity.getApplicationContext());
-                final Object lock = x.printBadge2(BadgeImage.getInstance());
+                final Object lock = x.printBadge2(BadgeImage.getInstance(), m_badgeContent.getFilenamePrefix());
 
                 Thread thread = new Thread(){
                     public void run() {

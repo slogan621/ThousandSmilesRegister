@@ -29,6 +29,7 @@ public class BadgeContent implements Parcelable {
     private Boolean m_dinnerPaid;
     private Boolean m_busPaid;
     private Boolean m_hotelPaid;
+    private String m_filenamePrefix;
 
     public BadgeContent() {
     }
@@ -39,6 +40,14 @@ public class BadgeContent implements Parcelable {
 
     String getName() {
         return m_name;
+    }
+
+    void setFilenamePrefix(String name) {
+        m_filenamePrefix = name;
+    }
+
+    String getFilenamePrefix() {
+        return m_filenamePrefix;
     }
 
     void setJob(String job) {
@@ -89,6 +98,7 @@ public class BadgeContent implements Parcelable {
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(m_name);
+        dest.writeString(m_filenamePrefix);
         dest.writeString(m_job);
         dest.writeString(m_date);
         dest.writeByte((byte) (m_busPaid ? 1 : 0));
@@ -98,6 +108,7 @@ public class BadgeContent implements Parcelable {
 
     private BadgeContent(Parcel in) {
         m_name = in.readString();
+        m_filenamePrefix = in.readString();
         m_job = in.readString();
         m_date = in.readString();
         m_busPaid = in.readByte() != 0;
